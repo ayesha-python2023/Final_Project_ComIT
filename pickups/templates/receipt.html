@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="receipt">
+    <h2>Receipt</h2>
+    <table class="receipt-table">
+        <tr>
+            <th>Name:</th>
+            <td>{{ pickup.name }}</td>
+        </tr>
+        <tr>
+            <th>Email:</th>
+            <td>{{ pickup.email }}</td>
+        </tr>
+        <tr>
+            <th>Address:</th>
+            <td>{{ pickup.address }}</td>
+        </tr>
+        <tr>
+            <th>Phone Number:</th>
+            <td>{{ pickup.phone_number }}</td>
+        </tr>
+        <tr>
+            <th>Pickup Date and Time:</th>
+            <td>{{ pickup.pickup_date_time }}</td>
+        </tr>
+        <tr>
+            <th>Small Bottles:</th>
+            <td>{{ pickup.small_bottles }}</td>
+        </tr>
+        <tr>
+            <th>Large Bottles:</th>
+            <td>{{ pickup.large_bottles }}</td>
+        </tr>
+        <tr>
+            <th>Total Refund:</th>
+            <td>${{ pickup.total_refund }}</td>
+        </tr>
+        <tr>
+            <th>Donation Amount:</th>
+            <td>${{ pickup.donation_amount }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}

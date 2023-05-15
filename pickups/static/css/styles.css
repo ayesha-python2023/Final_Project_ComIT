@@ -1,0 +1,30 @@
+.receipt {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.receipt h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.receipt-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.receipt-table th,
+.receipt-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.receipt-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}

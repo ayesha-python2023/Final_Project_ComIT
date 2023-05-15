@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<html>
+
+	<head>
+		<title>Bottles For Charity</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/css/main.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico" />
+
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				
+				<header id="header">
+					<div class="logo container">
+					  <div>
+						<h3><a href="{% url 'home' %}" id="logo">Welcome To Bottles For Charity</a></h3>
+						<p>Our mission is to foster environmental sustainability and community empowerment.</p><br>
+						<h1><br>
+                            <a href="/">Home</a> |
+                            <a href="{% url 'request_pickup' %}">Request a Pickup</a>|
+                            <a href="{% url 'reports' %}">Reports</a>|
+                            <a href="/admin">Admin</a>
+						</h1>
+					  </div>
+					</div>
+				  </header>
+				  
+
+			
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-12">
+
+								<!-- About -->
+									<section>
+										<h2 class="major"><span>What's this about?</span></h2>
+										<p>
+											We leverage the power of recycling to reduce waste, 
+											generate funding, and support critical social services. 
+											By transforming donated bottles into financial resources, 
+											we aim to create a cycle of positive change 
+											– one bottle at a time."
+										</p>
+									</section>
+
+							</div>
+							<div class="col-12">
+
+		<!-- Scripts -->
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/jquery.dropotron.min.js"></script>
+			<script src="static/js/jquery.scrolly.min.js"></script>
+			<script src="static/js/browser.min.js"></script>
+			<script src="static/js/breakpoints.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>
+
+	</body>
+</html>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Reports</h1>
+    <p>Total small bottles: {{ total_small_bottles }}</p>
+    <p>Total large bottles: {{ total_large_bottles }}</p>
+    <p>Total refunds: ${{ total_refunds }}</p>
+    <p>Total donations: ${{ total_donations }}</p>
+{% endblock %}
