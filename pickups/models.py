@@ -6,7 +6,7 @@ class PickupRequest(models.Model):
     address = models.CharField(max_length=200)
     email = models.EmailField()
     phone_number = models.CharField(max_length=15)
-    pickup_date_time = models.DateTimeField()
+    pickup_date_time = models.DateField()
     small_bottles = models.IntegerField()
     large_bottles = models.IntegerField()
     donation_percentage = models.IntegerField(choices=[(i, f"{i}%") for i in [0, 10, 25, 50, 100]])
